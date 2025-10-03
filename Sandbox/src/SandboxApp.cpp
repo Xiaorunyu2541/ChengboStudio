@@ -1,6 +1,8 @@
+#include "pch.h"
 #include "ChengboStudio.h"
 
-class Sandbox : public ChengboStudio::Application {
+class Sandbox : public ChengboStudio::Application
+{
 public:
 	Sandbox()
 	{

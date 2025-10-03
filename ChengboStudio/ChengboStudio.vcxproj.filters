@@ -21,6 +21,12 @@
     <ClCompile Include="src\ChengboStudio\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ChengboStudio\Platform\Windows\WindowsImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ChengboStudio\Application.h">
@@ -360,6 +366,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\ChengboStudio\Event\AppEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ChengboStudio\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ChengboStudio\Platform\Windows\WindowsImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

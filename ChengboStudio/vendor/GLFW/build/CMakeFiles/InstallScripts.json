@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Xiaorunyu/source/repos/ChengboStudio/ChengboStudio/vendor/GLFW/build/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/source/repos/ChengboStudio/ChengboStudio/vendor/GLFW/build/src/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/source/repos/ChengboStudio/ChengboStudio/vendor/GLFW/build/examples/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/source/repos/ChengboStudio/ChengboStudio/vendor/GLFW/build/tests/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/source/repos/ChengboStudio/ChengboStudio/vendor/GLFW/build/docs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

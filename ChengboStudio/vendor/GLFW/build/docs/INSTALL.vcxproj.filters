@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Xiaorunyu\source\repos\ChengboStudio\ChengboStudio\vendor\GLFW\build\CMakeFiles\eb611821b6cfec43632150b17f2a38b9\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{701DDDF6-9CE4-38F4-8FF3-DF7A52313D9B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

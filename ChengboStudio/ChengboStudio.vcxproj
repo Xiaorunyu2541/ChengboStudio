@@ -75,18 +75,34 @@
     <OutDir>$(SolutionDir)output\bin\executable\$(Platform)\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)output\obj\$(Platform)\$(Configuration)</IntDir>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)output\bin\executable\$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)output\obj\$(Platform)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)output\bin\executable\$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)output\obj\$(Platform)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)output\bin\executable\$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)output\obj\$(Platform)\$(Configuration)</IntDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)ChengboStudio\src\ChengboStudio;$(SolutionDir)ChengboStudio\vendor;$(SolutionDir)ChengboStudio\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ChengboStudio\src;$(SolutionDir)ChengboStudio\src\ChengboStudio;$(SolutionDir)ChengboStudio\vendor;$(SolutionDir)ChengboStudio\vendor\spdlog\include;$(SolutionDir)ChengboStudio\vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;dwmapi.lib;glfw3_mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)ChengboStudio\vendor\GLFW\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -98,7 +114,9 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)ChengboStudio\src\ChengboStudio;$(SolutionDir)ChengboStudio\vendor;$(SolutionDir)ChengboStudio\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ChengboStudio\src;$(SolutionDir)ChengboStudio\src\ChengboStudio;$(SolutionDir)ChengboStudio\vendor;$(SolutionDir)ChengboStudio\vendor\spdlog\include;$(SolutionDir)ChengboStudio\vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -109,15 +127,19 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)ChengboStudio\src\ChengboStudio;$(SolutionDir)ChengboStudio\vendor;$(SolutionDir)ChengboStudio\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ChengboStudio\src;$(SolutionDir)ChengboStudio\src\ChengboStudio;$(SolutionDir)ChengboStudio\vendor;$(SolutionDir)ChengboStudio\vendor\spdlog\include;$(SolutionDir)ChengboStudio\vendor\GLFW\include;$(SolutionDir)ChengboStudio\vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;dwmapi.lib;glfw3_mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)ChengboStudio\vendor\GLFW\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -129,7 +151,9 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)ChengboStudio\src\ChengboStudio;$(SolutionDir)ChengboStudio\vendor;$(SolutionDir)ChengboStudio\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ChengboStudio\src;$(SolutionDir)ChengboStudio\src\ChengboStudio;$(SolutionDir)ChengboStudio\vendor;$(SolutionDir)ChengboStudio\vendor\spdlog\include;$(SolutionDir)ChengboStudio\vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,6 +163,17 @@
   <ItemGroup>
     <ClCompile Include="src\ChengboStudio\Application.cpp" />
     <ClCompile Include="src\ChengboStudio\Log.cpp" />
+    <ClCompile Include="src\ChengboStudio\Platform\Windows\WindowsImpl.cpp" />
+    <ClCompile Include="src\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pch.h</PrecompiledHeaderFile>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ChengboStudio.h" />
@@ -150,6 +185,9 @@
     <ClInclude Include="src\ChengboStudio\Event\KeyboardEvents.h" />
     <ClInclude Include="src\ChengboStudio\Event\MouseEvents.h" />
     <ClInclude Include="src\ChengboStudio\Log.h" />
+    <ClInclude Include="src\ChengboStudio\Platform\Windows\WindowsImpl.h" />
+    <ClInclude Include="src\ChengboStudio\Window.h" />
+    <ClInclude Include="src\pch.h" />
     <ClInclude Include="vendor\spdlog\include\spdlog\async.h" />
     <ClInclude Include="vendor\spdlog\include\spdlog\async_logger-inl.h" />
     <ClInclude Include="vendor\spdlog\include\spdlog\async_logger.h" />

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Xiaorunyu\source\repos\ChengboStudio\ChengboStudio\vendor\GLFW\build\CMakeFiles\45bcc95f29450df14adc862e27af1610\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\source\repos\ChengboStudio\ChengboStudio\vendor\GLFW\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Xiaorunyu\source\repos\ChengboStudio\ChengboStudio\vendor\GLFW\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="C:\Users\Xiaorunyu\source\repos\ChengboStudio\ChengboStudio\vendor\GLFW\CMake\GenerateMappings.cmake" />
+    <None Include="C:\Users\Xiaorunyu\source\repos\ChengboStudio\ChengboStudio\vendor\GLFW\build\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{701DDDF6-9CE4-38F4-8FF3-DF7A52313D9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{06E4E458-5F4D-3660-BBF9-DAC3C3994BFF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
