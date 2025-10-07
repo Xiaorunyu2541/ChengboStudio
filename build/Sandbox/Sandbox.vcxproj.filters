@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\Sandbox\src\SandboxApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\Sandbox\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D4C67E91-A345-3C66-8294-F72EDCE5F9F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

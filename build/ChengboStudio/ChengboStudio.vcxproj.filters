@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\ChengboStudio\CMakeFiles\ChengboStudio.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Platform\Windows\WindowsImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Entrypoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Event\AppEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Event\Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Event\KeyboardEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Event\MouseEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Platform\Windows\WindowsImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\ChengboStudio\CMakeFiles\ChengboStudio.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\ChengboStudio\CMakeFiles\ChengboStudio.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\ChengboStudio\CMakeFiles\ChengboStudio.dir\MinSizeRel\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\ChengboStudio\CMakeFiles\ChengboStudio.dir\RelWithDebInfo\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D606DC0C-B02E-3292-BCE0-F80F10475537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{0BDD3761-5F84-3DA9-80A4-5A37553E9E4A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D4C67E91-A345-3C66-8294-F72EDCE5F9F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
