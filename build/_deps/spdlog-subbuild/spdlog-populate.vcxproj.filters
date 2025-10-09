@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\cc55c64db7585146dfe8a0ad992748d2\spdlog-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\cc55c64db7585146dfe8a0ad992748d2\spdlog-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\cc55c64db7585146dfe8a0ad992748d2\spdlog-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\cc55c64db7585146dfe8a0ad992748d2\spdlog-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\cc55c64db7585146dfe8a0ad992748d2\spdlog-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\cc55c64db7585146dfe8a0ad992748d2\spdlog-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\cc55c64db7585146dfe8a0ad992748d2\spdlog-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\cc55c64db7585146dfe8a0ad992748d2\spdlog-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\70aee275ffec8a4c53d1bb9b6d42869b\spdlog-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\8275fb4140adef836e3249b66be037f1\spdlog-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-subbuild\CMakeFiles\spdlog-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{476E73DA-F895-3596-B537-E89E41D9FF4C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

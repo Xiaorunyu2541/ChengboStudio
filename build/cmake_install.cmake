@@ -34,6 +34,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glm-build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/cmake_install.cmake")
 endif()
 

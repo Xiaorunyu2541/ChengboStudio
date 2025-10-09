@@ -2,6 +2,12 @@
 	"InstallScripts" : 
 	[
 		"C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-build/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-build/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-build/src/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-build/docs/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glm-build/cmake_install.cmake",
+		"C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glm-build/glm/cmake_install.cmake",
 		"C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/cmake_install.cmake",
 		"C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/cmake_install.cmake"
 	],

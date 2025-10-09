@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/f1c51d3b25cf88a842df4ffed95df37c/glfw-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/5703b7a110a2482c298a0e04b94e5fa0/glfw-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"glfw-populate"
+		],
+		"name" : "glfw-populate"
+	}
+}

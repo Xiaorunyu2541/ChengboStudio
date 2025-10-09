@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/f1c51d3b25cf88a842df4ffed95df37c/glfw-populate.rule
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/5703b7a110a2482c298a0e04b94e5fa0/glfw-populate-complete.rule
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-build.rule
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-configure.rule
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-download.rule
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-install.rule
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-mkdir.rule
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-patch.rule
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-test.rule
+C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glfw-subbuild/CMakeFiles/dd5c4c947bc16f34552312c44eb92adf/glfw-populate-update.rule
