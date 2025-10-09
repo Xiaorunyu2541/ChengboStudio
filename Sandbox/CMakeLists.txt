@@ -8,39 +8,37 @@ file(GLOB_RECURSE SANDBOX_SRC
 
 add_executable(Sandbox ${SANDBOX_SRC})
 
-# 宏定义
+# macro definitions
 target_compile_definitions(Sandbox
     PRIVATE
-        DEBUG_ASSERTS
         STUDIO_APP
-        STUDIO_WINDOWS_PLATFORM
         _CONSOLE
         _DEBUG
 )
 
-# 包含目录
+# include directories
 target_include_directories(Sandbox
     PRIVATE
         ${CMAKE_SOURCE_DIR}/ChengboStudio/src
         ${CMAKE_SOURCE_DIR}/ChengboStudio/vendor/spdlog/include
 )
 
-# 链接 ChengboStudio 动态库
+# link engine core
 target_link_libraries(Sandbox PRIVATE ChengboStudio)
 
-# 自动复制 DLL 到 Sandbox 运行目录（Windows）
+# automate packaging process
 add_custom_command(TARGET Sandbox POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
         $<TARGET_FILE:ChengboStudio>
         $<TARGET_FILE_DIR:Sandbox>
 )
 
-# MSVC 编译选项
+# MSVC compile options
 if(MSVC)
     target_compile_options(Sandbox PRIVATE /W4 /EHsc /utf-8)
 endif()
 
-# 预编译头（可选）
+# precompiled header
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/pch.h")
     target_precompile_headers(Sandbox PRIVATE pch.h)
 endif()

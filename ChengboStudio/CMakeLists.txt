@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(ChengboStudioLib LANGUAGES CXX)
+project(CBCore LANGUAGES CXX)
 
 file(GLOB_RECURSE ENGINE_SRC
     src/*.cpp
@@ -8,16 +8,14 @@ file(GLOB_RECURSE ENGINE_SRC
 
 add_library(ChengboStudio SHARED ${ENGINE_SRC})
 
-# 宏定义
+# Macro Definitions
 target_compile_definitions(ChengboStudio
     PRIVATE
-        DEBUG_ASSERTS
-        STUDIO_WINDOWS_PLATFORM
         _CONSOLE
         _DEBUG
 )
 
-# 包含目录
+# include directories
 target_include_directories(ChengboStudio
     PUBLIC
         ${CMAKE_SOURCE_DIR}/ChengboStudio/src
@@ -27,20 +25,21 @@ target_include_directories(ChengboStudio
         ${CMAKE_SOURCE_DIR}/ChengboStudio/vendor/spdlog/include
 )
 
-# 链接库
+# link libraries
 target_link_libraries(ChengboStudio
     PUBLIC
         dwmapi.lib
-        glfw3_mt.lib
-        opengl32.lib
+        glfw
+        spdlog::spdlog
+        OpenGL::GL
 )
 
-# 预编译头（可选）
+# precompiled headers
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/pch.h")
     target_precompile_headers(ChengboStudio PRIVATE src/pch.h)
 endif()
 
-# MSVC 编译选项
+# MSVC specific optimize
 if(MSVC)
     target_compile_options(ChengboStudio PRIVATE /W4 /EHsc /utf-8)
 endif()

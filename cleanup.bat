@@ -1,0 +1,2 @@
+del build
+pause

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/spdlog-populate"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/8275fb4140adef836e3249b66be037f1/spdlog-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/70aee275ffec8a4c53d1bb9b6d42869b/spdlog-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/cc55c64db7585146dfe8a0ad992748d2/spdlog-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/cc55c64db7585146dfe8a0ad992748d2/spdlog-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/cc55c64db7585146dfe8a0ad992748d2/spdlog-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/cc55c64db7585146dfe8a0ad992748d2/spdlog-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/cc55c64db7585146dfe8a0ad992748d2/spdlog-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/cc55c64db7585146dfe8a0ad992748d2/spdlog-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/cc55c64db7585146dfe8a0ad992748d2/spdlog-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/spdlog-subbuild/CMakeFiles/cc55c64db7585146dfe8a0ad992748d2/spdlog-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"spdlog-populate"
+		],
+		"name" : "spdlog-populate"
+	}
+}
