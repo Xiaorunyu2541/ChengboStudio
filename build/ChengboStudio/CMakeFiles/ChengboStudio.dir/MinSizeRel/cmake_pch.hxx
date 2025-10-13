@@ -2,5 +2,5 @@
 
 #pragma system_header
 #ifdef __cplusplus
-#include "C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/ChengboStudio/src/pch.h"
+#include <pch.h>
 #endif // __cplusplus

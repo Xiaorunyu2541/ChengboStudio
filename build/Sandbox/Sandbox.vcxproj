@@ -98,14 +98,16 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/Sandbox.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;STUDIO_APP;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;STUDIO_APP;_CONSOLE;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;_DEBUG;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
@@ -164,21 +166,23 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/Sandbox.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\spdlog\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\GLFW\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\glfw-src\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -232,21 +236,23 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/Sandbox.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\spdlog\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\GLFW\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\glfw-src\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -301,19 +307,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/Sandbox.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;_DEBUG;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STUDIO_APP;_CONSOLE;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;_DEBUG;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\spdlog\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\GLFW\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\glfw-src\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -412,7 +420,34 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\Sandbox\src\SandboxApp.cpp" />
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\Sandbox\CMakeFiles\Sandbox.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/Sandbox.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/Sandbox.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/Sandbox.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/Sandbox.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\Sandbox\src\SandboxApp.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/Sandbox/CMakeFiles/Sandbox.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\Sandbox\CMakeFiles\Sandbox.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\Sandbox\CMakeFiles\Sandbox.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\Sandbox\CMakeFiles\Sandbox.dir\MinSizeRel\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\Sandbox\CMakeFiles\Sandbox.dir\RelWithDebInfo\cmake_pch.hxx" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

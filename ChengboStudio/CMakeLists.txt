@@ -12,7 +12,6 @@ add_library(ChengboStudio SHARED ${ENGINE_SRC})
 target_compile_definitions(ChengboStudio
     PRIVATE
         _CONSOLE
-        _DEBUG
 )
 
 # include directories
@@ -20,6 +19,7 @@ target_include_directories(ChengboStudio
     PUBLIC
         ${CMAKE_SOURCE_DIR}/ChengboStudio/src
         ${CMAKE_SOURCE_DIR}/ChengboStudio/src/ChengboStudio
+	${CMAKE_SOURCE_DIR}/ChengboStudio/src/ChengboStudio/
         ${CMAKE_SOURCE_DIR}/ChengboStudio/vendor
         ${CMAKE_SOURCE_DIR}/ChengboStudio/vendor/GLFW/include
         ${CMAKE_SOURCE_DIR}/ChengboStudio/vendor/spdlog/include
@@ -34,10 +34,10 @@ target_link_libraries(ChengboStudio
         OpenGL::GL
 )
 
-# precompiled headers
+#[[ precompiled headers
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/pch.h")
     target_precompile_headers(ChengboStudio PRIVATE src/pch.h)
-endif()
+endif()]]
 
 # MSVC specific optimize
 if(MSVC)

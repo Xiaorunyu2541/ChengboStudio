@@ -14,7 +14,7 @@
 #ifdef DEBUG_ASSERTS
 	#define CB_CORE_ASSERT(x, ...) { if (!(x)) { CB_CORE_ERROR("Assert failed! Error: {0}", __VA_ARGS__); __debugbreak; } }
 	#define CB_ASSERT(x, ...) { if (!(x)) { CB_ERROR("Assert failed! Error: {0}", __VA_ARGS__); __debugbreak; } }
-#elif
+#else
 	#define CB_CORE_ASSERT(x, ...)
 	#define CB_ASSERT(x, ...)
 #endif

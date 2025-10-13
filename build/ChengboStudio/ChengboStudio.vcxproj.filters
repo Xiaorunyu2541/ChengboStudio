@@ -7,6 +7,12 @@
     <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\LayerStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -40,6 +46,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Event\MouseEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\LayerStack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Log.h">

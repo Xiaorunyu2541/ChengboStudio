@@ -1,7 +1,7 @@
 #pragma once
 #include "Core.h"
-
 #include "pch.h"
+
 
 namespace ChengboStudio {
 
@@ -10,7 +10,7 @@ namespace ChengboStudio {
 		Null = 0,
 		Close, Resize, Focus, Unfocus, WindowMoved, // Window
 		OnTick, OnUpdate, OnRender, //Application loop
-		KeyPressed, KeyReleased, MouseMoved, Scrolled //input
+		KeyPressed, KeyReleased, MouseMoved, Scrolled, ButtonPressed, ButtonReleased //input
 	};
 
 	enum EvtCategory 
@@ -30,13 +30,14 @@ namespace ChengboStudio {
 
 	class CHENGBO_API Event
 	{
-		friend class Dispatch;
+		friend class Dispatcher;
 	public:
 		virtual EvtType GetEventType() const = 0;
 		virtual int GetCategory() const = 0;
 		virtual const char* dbg_GetName() const = 0;
 		virtual std::string ToString() const { return dbg_GetName(); } //probably debug only
 
+		inline virtual bool GetHandleState() { return m_Handled; }
 		inline virtual bool IsInCategory(EvtCategory category)
 		{
 			return category & GetCategory();

@@ -13,7 +13,6 @@ target_compile_definitions(Sandbox
     PRIVATE
         STUDIO_APP
         _CONSOLE
-        _DEBUG
 )
 
 # include directories
@@ -38,7 +37,7 @@ if(MSVC)
     target_compile_options(Sandbox PRIVATE /W4 /EHsc /utf-8)
 endif()
 
-# precompiled header
+#[[ precompiled header
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/pch.h")
     target_precompile_headers(Sandbox PRIVATE pch.h)
-endif()
+endif()]]

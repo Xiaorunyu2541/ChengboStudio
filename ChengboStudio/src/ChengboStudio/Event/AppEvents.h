@@ -12,15 +12,14 @@ namespace ChengboStudio
 		inline uint32_t GetWidth() const { return m_Width; }
 		inline uint32_t GetHeight() const { return m_Height; }
 
-		std::string ToString() 
-		{
-			std::string str;
-			str = std::format("WindowResized Width: {}, Height: {}", m_Width, m_Height);
-			return str;
-		}
-
 		EVENT_CLASS_TYPE(Resize)
 		EVENT_CLASS_CATEGORY(CategoryApplication)
+
+		std::string ToString() const override
+		{
+			std::string str = std::format("WindowResized Width: {0}, Height: {1}", m_Width, m_Height);
+			return str;
+		}
 	private:
 		uint32_t m_Width, m_Height;
 	};

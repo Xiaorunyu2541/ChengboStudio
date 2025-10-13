@@ -462,6 +462,9 @@ SPDLOG_BUILD_WARNINGS:BOOL=OFF
 //non supported option
 SPDLOG_CLOCK_COARSE:BOOL=OFF
 
+//Filename postfix for libraries in debug builds
+SPDLOG_DEBUG_POSTFIX:STRING=d
+
 //Disable default logger creation
 SPDLOG_DISABLE_DEFAULT_LOGGER:BOOL=OFF
 
@@ -537,9 +540,6 @@ Sandbox_SOURCE_DIR:STATIC=C:/Users/Xiaorunyu/Development/repositories/ChengboStu
 
 //Use MSVC runtime library DLL
 USE_MSVC_RUNTIME_LIBRARY_DLL:BOOL=ON
-
-//The directory containing a CMake configuration file for glfw3.
-glfw3_DIR:PATH=glfw3_DIR-NOTFOUND
 
 //Value Computed by CMake
 glm_BINARY_DIR:STATIC=C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/_deps/glm-build

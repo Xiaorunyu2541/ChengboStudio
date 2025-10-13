@@ -1,6 +1,5 @@
 #pragma once
 #include "Event.h"
-#include "pch.h"
 
 namespace ChengboStudio {
 	class Key : public Event

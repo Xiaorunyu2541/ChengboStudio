@@ -33,12 +33,12 @@ namespace ChengboStudio
 		inline float GetOffsetX() const { return m_X; }
 		inline float GetOffsetY() const { return m_Y; }
 
-
 		std::string ToString() const override
 		{
-			std::string str = std::format("MousePositionX: {}, MousePositionY: {}", m_X, m_Y);
+			std::string str = std::format("ScrollDegreeX: {}, ScrollDegreeY: {}", m_X, m_Y);
 			return str;
 		}
+
 		EVENT_CLASS_TYPE(Scrolled)
 		EVENT_CLASS_CATEGORY(CategoryEvtInput | CategoryMouse)
 	private:
@@ -49,15 +49,43 @@ namespace ChengboStudio
 	{
 	public:
 
+		EVENT_CLASS_TYPE(ButtonPressed)
 		EVENT_CLASS_CATEGORY(CategoryEvtInput | CategoryMouse)
 
-			inline int GetButtonID() const { return m_ID; }
+		inline int GetButtonID() const { return m_ID; }
 
-	protected:
-		int m_ID;
+		std::string ToString() const override
+		{
+			std::string str = std::format("ButtonPressed: {}", m_ID);
+			return str;
+		}
 
 		MouseClickEvent(int keyid)
 			: m_ID(keyid) {
 		}
+	protected:
+		int m_ID;
+	};
+
+	class CHENGBO_API MouseReleaseEvent : public Event
+	{
+	public:
+
+		EVENT_CLASS_TYPE(ButtonReleased)
+		EVENT_CLASS_CATEGORY(CategoryEvtInput | CategoryMouse)
+
+		inline int GetButtonID() const { return m_ID; }
+
+		std::string ToString() const override
+		{
+			std::string str = std::format("ButtonReleased: {}", m_ID);
+			return str;
+		}
+
+		MouseReleaseEvent(int keyid)
+			: m_ID(keyid) {
+		}
+	protected:
+		int m_ID;
 	};
 }

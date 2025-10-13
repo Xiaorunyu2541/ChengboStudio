@@ -1,9 +1,10 @@
 #pragma once
 
-#include "pch.h"
-
 #include "Core.h"
 #include "Event/Event.h"
+#include "Event/AppEvents.h"
+#include "LayerStack.h"
+
 
 #include "Window.h"
 
@@ -17,9 +18,17 @@ namespace ChengboStudio
 		virtual ~Application();
 
 		void Run();
+
+		void OnEvent(Event& evt);
+
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* overlay);
 	private:
+		bool OnWindowClose(EvtWindowClose& evt);
+
 		std::unique_ptr<Window> m_Window;
 		bool m_Active = true;
+		LayerStack m_Stack;
 	};
 
 	Application* CreateApplication(); //will be defined in sandbox project

@@ -108,7 +108,7 @@
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug";ChengboStudio_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CONSOLE;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;_DEBUG;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug";ChengboStudio_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
@@ -164,14 +164,14 @@
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release";ChengboStudio_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release";ChengboStudio_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\";ChengboStudio_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\";ChengboStudio_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\GLFW\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\spdlog\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\glfw-src\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -222,14 +222,14 @@
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel";ChengboStudio_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel";ChengboStudio_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\";ChengboStudio_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\";ChengboStudio_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\GLFW\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\spdlog\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\glfw-src\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -276,17 +276,17 @@
       <PrecompiledHeaderFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/ChengboStudio.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
       <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo";ChengboStudio_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;_DEBUG;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo";ChengboStudio_EXPORTS</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;_DEBUG;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";ChengboStudio_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CONSOLE;STUDIO_WINDOWS_PLATFORM;DEBUG_ASSERTS;_DEBUG;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";ChengboStudio_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\GLFW\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\vendor\spdlog\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\glfw-src\include;C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\build\_deps\spdlog-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -405,6 +405,20 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Event\Event.h" />
     <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Event\KeyboardEvents.h" />
     <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Event\MouseEvents.h" />
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Layer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Layer.h" />
+    <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\LayerStack.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\LayerStack.h" />
     <ClCompile Include="C:\Users\Xiaorunyu\Development\repositories\ChengboStudio\ChengboStudio\src\ChengboStudio\Log.cpp">
       <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Xiaorunyu/Development/repositories/ChengboStudio/build/ChengboStudio/CMakeFiles/ChengboStudio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
