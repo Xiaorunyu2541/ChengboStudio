@@ -20,3 +20,5 @@
 	#define CB_CORE_ASSERT(x, ...)
 	#define CB_ASSERT(x, ...)
 #endif
+
+#define BIND_EVENT_FN(fn) std::bind(&fn, this, std::placeholders::_1)

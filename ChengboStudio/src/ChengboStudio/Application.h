@@ -23,12 +23,16 @@ namespace ChengboStudio
 
 		void PushLayer(Layer* layer);
 		void PushOverlay(Layer* overlay);
+
+		inline static Application& GetInstace() { return *s_Instance; }
+		inline Window& GetWindow() { return *m_Window; }
 	private:
 		bool OnWindowClose(EvtWindowClose& evt);
 
 		std::unique_ptr<Window> m_Window;
 		bool m_Active = true;
 		LayerStack m_Stack;
+		static Application* s_Instance;
 	};
 
 	Application* CreateApplication(); //will be defined in sandbox project

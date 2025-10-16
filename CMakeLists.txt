@@ -14,7 +14,7 @@ if(MSVC)
     add_compile_options(/utf-8)
 endif()
 
-# add cpm
+# add cpm PS: idk why but i can't put it into that vendor folder it pops an error 
 include(CPM.cmake)
 
 # add package dependencies
@@ -33,6 +33,8 @@ find_package(OpenGL REQUIRED)
 
 # debug/release macros
 set(DEBUG_CONFIGS Debug RelWithDebInfo)
+set(ALL_CONFIGURATIONS Debug Release MinSizeRel RelWithDebInfo)
+
 foreach(config ${DEBUG_CONFIGS})
     add_compile_definitions($<$<CONFIG:${config}>:DEBUG_ASSERTS>)
     add_compile_definitions($<$<CONFIG:${config}>:_DEBUG>)
@@ -73,4 +75,4 @@ endif()
 
 #Configure pch
 target_precompile_headers(ChengboStudio PRIVATE <pch.h>)
-target_precompile_headers(Sandbox PRIVATE <pch.h>)
+#[[target_precompile_headers(Sandbox PRIVATE <pch.h>)]]

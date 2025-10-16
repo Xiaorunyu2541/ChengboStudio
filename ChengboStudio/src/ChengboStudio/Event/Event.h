@@ -44,7 +44,7 @@ namespace ChengboStudio {
 		}
 
 	protected:
-		bool m_Handled;
+		bool m_Handled = 0;
 	};
 
 	class Dispatcher

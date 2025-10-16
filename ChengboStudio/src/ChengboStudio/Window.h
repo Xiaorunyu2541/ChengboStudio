@@ -38,6 +38,8 @@ namespace ChengboStudio
 		virtual bool GetVSyncState() const = 0;
 		virtual void SetVSyncState(bool state) = 0;
 
+		virtual void* GetNativeWindow() const = 0;
+
 		static Window* Create(const WindowInfo& info = WindowInfo());
 
 	};

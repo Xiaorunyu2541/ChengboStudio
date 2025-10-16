@@ -5,10 +5,14 @@
 #include "Event/KeyboardEvents.h"
 #include "Event/MouseEvents.h"
 
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
 namespace ChengboStudio 
 {
 	static bool s_GLFWInitialized = false;
+
+	static uint8_t s_GLFWWindowCount = 0;
 
 	static void ErrorCallBack(int error_code, const char* description)
 	{
@@ -33,6 +37,8 @@ namespace ChengboStudio
 	void Win32Window::Shutdown()
 	{
 		glfwDestroyWindow(m_Window);
+		--s_GLFWWindowCount;
+		glfwTerminate();
 	}
 
 	void Win32Window::Init(const WindowInfo& info)
@@ -51,7 +57,10 @@ namespace ChengboStudio
 		}
 
 		m_Window = glfwCreateWindow((int)m_Data.Width, (int)m_Data.Height, m_Data.WindowTitle.c_str(), nullptr, nullptr);
+		++s_GLFWWindowCount;
 		glfwMakeContextCurrent(m_Window);
+		int state = gladLoadGL(glfwGetProcAddress);
+		CB_CORE_ASSERT(state, "failed to load glad")
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSyncState(true);
 

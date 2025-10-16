@@ -21,8 +21,8 @@ namespace ChengboStudio
 
 	void LayerStack::PopLayer(Layer* layer)
 	{
-		auto it = std::find(m_Layers.begin() + m_LayerIndex, m_Layers.end(), layer);
-		if (it != m_Layers.end())
+		auto it = std::find(m_Layers.begin(), m_Layers.begin() + m_LayerIndex, layer);
+		if (it != m_Layers.begin() + m_LayerIndex)
 		{
 			m_Layers.erase(it);
 			--m_LayerIndex;

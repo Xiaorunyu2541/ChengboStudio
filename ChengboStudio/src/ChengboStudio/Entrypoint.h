@@ -3,7 +3,7 @@
 
 extern ChengboStudio::Application* ChengboStudio::CreateApplication();
 
-int main(int argc, char* argv[])
+int main()
 {
 	ChengboStudio::Log::Init();
 	ChengboStudio::Log::GetCoreLogger()->warn("studio");

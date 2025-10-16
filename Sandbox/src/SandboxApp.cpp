@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "ChengboStudio.h"
 
 class TestLayer : public ChengboStudio::Layer
@@ -9,11 +8,12 @@ public:
 
 	void OnUpdate() override
 	{
-		CB_INFO("TestLayer Updated");
+		//CB_INFO("TestLayer Updated");
 	}
 
 	void OnEvent(ChengboStudio::Event& evt) override
-	{		CB_TRACE("{0}", evt.ToString());
+	{
+		CB_TRACE("{0}", evt.ToString());
 	}
 };
 
@@ -23,6 +23,7 @@ public:
 	Sandbox()
 	{
 		PushLayer(new TestLayer());
+		PushOverlay(new ChengboStudio::GuiLayer());
 	};
 
 	~Sandbox()

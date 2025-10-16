@@ -8,6 +8,15 @@ file(GLOB_RECURSE SANDBOX_SRC
 
 add_executable(Sandbox ${SANDBOX_SRC})
 
+# Scan folder structure as filters to make it easier to develop
+foreach(FILE ${SANDBOX_SRC})
+    # obtain relative path
+    file(RELATIVE_PATH REL_PATH "${CMAKE_CURRENT_SOURCE_DIR}/src" "${FILE}")
+    get_filename_component(PATH "${REL_PATH}" PATH)
+    string(REPLACE "/" "\\" GROUP "${PATH}")
+    source_group("${GROUP}" FILES "${FILE}")
+endforeach()
+
 # macro definitions
 target_compile_definitions(Sandbox
     PRIVATE

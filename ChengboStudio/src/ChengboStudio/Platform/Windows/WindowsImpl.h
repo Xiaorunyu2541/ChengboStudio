@@ -3,7 +3,7 @@
 #include "pch.h"
 #include "Window.h"
 
-#include <GLFW/glfw3.h>
+struct GLFWwindow;
 
 namespace ChengboStudio 
 {
@@ -17,13 +17,16 @@ namespace ChengboStudio
 
 		void OnUpdate() override;
 		void Shutdown();
-
+		
+		inline GLFWwindow* GetWindow() { return m_Window; }
 		inline uint32_t GetWidth() const override { return m_Data.Width; }
 		inline uint32_t GetHeight() const override { return m_Data.Height; }
 		inline bool GetVSyncState() const override { return m_Data.VSyncState; }
 
 		void SetEventCallBack(const EvtCallbackFn& callback) override { m_Data.callback = callback; }
 		void SetVSyncState(bool state);
+
+		inline virtual void* GetNativeWindow() const { return m_Window; }
 	private:
 		virtual void Init(const WindowInfo& info);
 		virtual void Clean() {};
