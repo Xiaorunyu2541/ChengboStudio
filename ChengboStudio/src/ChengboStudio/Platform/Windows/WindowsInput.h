@@ -1,7 +1,7 @@
 #pragma once
 
-#include "InputManager.h"
-#include "Application.h"
+#include "Core/InputManager.h"
+#include "Core/Application.h"
 
 
 namespace ChengboStudio {

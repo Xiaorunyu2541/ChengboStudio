@@ -2,12 +2,16 @@
 
 //public headers
 
-#include "ChengboStudio/Application.h"
-#include "ChengboStudio/Layer.h"
-#include "ChengboStudio/Log.h"
-#include "ChengboStudio/ImGui/GuiLayer.h"
-#include "ChengboStudio/InputManager.h"
+#include "Core/Application.h"
+#include "Core/Layer.h"
+#include "Core/Log.h"
+
+#include "ImGui/GuiLayer.h"
+
+#include "Core/KeyCodes.h"
+#include "Core/MouseCodes.h"
+#include "Core/InputManager.h"
 
 //Entrypoint header--------------------
-#include "ChengboStudio/Entrypoint.h"
+#include "Core/Entrypoint.h"
 //--------------------------------------

@@ -1,14 +1,22 @@
 #include "pch.h"
 #include "GuiLayer.h"
-#include "Application.h"
-#include "imgui_impl_glfw.h"
-#include "Platform/Windows/WindowsImpl.h"
 
 #include "GLAD/glad.h"
-#include "GLFW/glfw3.h"
+
+#include <GLFW/glfw3.h>
+
+#include <imgui.h>
+#include <imgui_internal.h>
+
+#include <backends/imgui_impl_glfw.h>
+#include <backends/imgui_impl_opengl3.h>
+
+#include "Core/Application.h"
+
 
 namespace ChengboStudio 
 {
+
 	GuiLayer::GuiLayer()
 		: Layer("ImGui")
 	{
@@ -22,14 +30,30 @@ namespace ChengboStudio
 
 	void GuiLayer::OnAttach()
 	{
+		IMGUI_CHECKVERSION();
 		ImGui::CreateContext();
+
+		ImGuiIO& io = ImGui::GetIO(); (void)io;
+		io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;       // Enable Keyboard Controls
+		//io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
+		io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;           // Enable Docking
+		io.ConfigFlags |= ImGuiConfigFlags_ViewportsEnable;         // Enable Multi-Viewport / Platform Windows
+		//io.ConfigFlags |= ImGuiConfigFlags_ViewportsNoTaskBarIcons;
+		//io.ConfigFlags |= ImGuiConfigFlags_ViewportsNoMerge;
+
+		io.BackendFlags |= ImGuiBackendFlags_RendererHasViewports;
+
+		Application* app = &Application::GetInstance();
+
 		ImGui::StyleColorsDark();
 
-		ImGuiIO& io = ImGui::GetIO();
-		io.BackendFlags |= ImGuiBackendFlags_HasMouseCursors;
-		io.BackendFlags |= ImGuiBackendFlags_HasSetMousePos;
-
-		Application* app = &Application::GetInstace();
+		// When viewports are enabled we tweak WindowRounding/WindowBg so platform windows can look identical to regular ones.
+		ImGuiStyle& style = ImGui::GetStyle();
+		if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable)
+		{
+			style.WindowRounding = 0.0f;
+			style.Colors[ImGuiCol_WindowBg].w = 1.0f;
+		}
 		
 		GLFWwindow* window = static_cast<GLFWwindow*>(app->GetWindow().GetNativeWindow());
 		ImGui_ImplGlfw_InitForOpenGL(window, true);
@@ -46,39 +70,46 @@ namespace ChengboStudio
 	void GuiLayer::OnUpdate()
 	{
 		
-		Window& window = Application::GetInstace().GetWindow();
+		Window& window = Application::GetInstance().GetWindow();
 
 		ImGuiIO& io = ImGui::GetIO();
 
 		float time = (float)glfwGetTime();
 		io.DeltaTime = m_Time > 0.0f ? (time - m_Time) : (1.0f / 60.0f);
 		io.DisplaySize = ImVec2((float)window.GetWidth(), (float)window.GetHeight());
-
 		
+	}
+
+	void GuiLayer::Begin()
+	{
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
-
-		static bool show = true;
-		ImGui::ShowDemoWindow(&show);
-
-		ImGui::Render();
-		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 	}
 
-	bool GuiLayer::OnWindowResize(EvtWindowResize& evt)
+	void GuiLayer::End()
 	{
 		ImGuiIO& io = ImGui::GetIO();
-		io.DisplaySize = ImVec2((float)evt.GetWidth(), (float)evt.GetHeight());
-		io.DisplayFramebufferScale = ImVec2(1.0f, 1.0f);
-		glViewport(0, 0, evt.GetWidth(), evt.GetHeight());
+		Application& app = Application::GetInstance();
+		io.DisplaySize = ImVec2((float)app.GetWindow().GetWidth(), (float)app.GetWindow().GetHeight());
 
-		return false;
+		// Rendering
+		ImGui::Render();
+		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
+		if (io.ConfigFlags & ImGuiConfigFlags_ViewportsEnable)
+		{
+			GLFWwindow* backup_current_context = glfwGetCurrentContext();
+			ImGui::UpdatePlatformWindows();
+			ImGui::RenderPlatformWindowsDefault();
+			glfwMakeContextCurrent(backup_current_context);
+		}
+		const char* gl_version = (const char*)glGetString(GL_VERSION);
 	}
 
-	void GuiLayer::OnEvent(Event& evt)
+	void GuiLayer::OnGuiRender()
 	{
-		Dispatcher dispatcher(evt);
-		dispatcher.Dispatch<EvtWindowResize>(BIND_EVENT_FN(GuiLayer::OnWindowResize));
+		static bool show = true;
+		ImGui::ShowDemoWindow(&show);
 	}
 }

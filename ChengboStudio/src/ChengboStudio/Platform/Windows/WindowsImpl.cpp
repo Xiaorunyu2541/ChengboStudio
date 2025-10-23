@@ -5,6 +5,7 @@
 #include "Event/KeyboardEvents.h"
 #include "Event/MouseEvents.h"
 
+#define GLAD_GL_IMPLEMENTATION
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
@@ -13,6 +14,8 @@ namespace ChengboStudio
 	static bool s_GLFWInitialized = false;
 
 	static uint8_t s_GLFWWindowCount = 0;
+
+	static uint8_t s_RepeatCount = 0;
 
 	static void ErrorCallBack(int error_code, const char* description)
 	{
@@ -55,6 +58,10 @@ namespace ChengboStudio
 			glfwSetErrorCallback(ErrorCallBack);
 			CB_CORE_ASSERT(state, "Unable to initialize glfw!");
 		}
+
+		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+		glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 		m_Window = glfwCreateWindow((int)m_Data.Width, (int)m_Data.Height, m_Data.WindowTitle.c_str(), nullptr, nullptr);
 		++s_GLFWWindowCount;
@@ -130,16 +137,21 @@ namespace ChengboStudio
 					{
 						KeyPressed evt(key, 0);
 						info.callback(evt);
+						break;
 					}
 					case GLFW_RELEASE:
 					{
 						KeyReleased evt(key);
 						info.callback(evt);
+						s_RepeatCount = 0;
+						break;
 					}
 					case GLFW_REPEAT:
 					{
-						KeyPressed evt(key, 1);
+						KeyPressed evt(key, s_RepeatCount);
 						info.callback(evt);
+						++s_RepeatCount;
+						break;
 					}
 				}
 			});

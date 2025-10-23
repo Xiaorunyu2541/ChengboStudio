@@ -1,7 +1,7 @@
 #pragma once
 
 #include "pch.h"
-#include "Window.h"
+#include "Core/Window.h"
 
 struct GLFWwindow;
 

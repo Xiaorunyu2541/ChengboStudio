@@ -1,4 +1,5 @@
 #include "ChengboStudio.h"
+#include "ImGui/imgui.h"
 
 class TestLayer : public ChengboStudio::Layer
 {
@@ -14,6 +15,13 @@ public:
 	void OnEvent(ChengboStudio::Event& evt) override
 	{
 		CB_TRACE("{0}", evt.ToString());
+	}
+
+	void OnGuiRender() override 
+	{
+		ImGui::Begin("TestGuiRendering");
+		ImGui::Text("Some Text");
+		ImGui::End();
 	}
 };
 

@@ -1,8 +1,5 @@
 #pragma once
-#include "Layer.h"
-
-#include "imgui.h"
-#include "Platform/OpenGL/GuiRenderer.h"
+#include "Core/Layer.h"
 
 #include "Event/AppEvents.h"
 
@@ -14,13 +11,14 @@ namespace ChengboStudio
 		GuiLayer();
 		~GuiLayer();
 
-		void OnAttach();
-		void OnDetach();
-		void OnUpdate();
-		void OnEvent(Event& evt);
+		virtual void OnAttach() override;
+		virtual void OnDetach() override;
+		virtual void OnUpdate() override;
+		virtual void OnGuiRender() override;
+
+		void Begin();
+		void End();
 	private:
 		float m_Time = 0.0f;
-	private:
-		bool OnWindowResize(EvtWindowResize& evt);
 	};
 }

@@ -8,7 +8,7 @@ namespace ChengboStudio
 
 	bool WindowsInput::IsKeyPressedImpl(int keycode)
 	{
-		auto window = static_cast<GLFWwindow*>(Application::GetInstace().GetWindow().GetNativeWindow());
+		auto window = static_cast<GLFWwindow*>(Application::GetInstance().GetWindow().GetNativeWindow());
 		int state = glfwGetKey(window, keycode);
 		return (state == GLFW_PRESS || state == GLFW_REPEAT);
 	}
@@ -27,7 +27,7 @@ namespace ChengboStudio
 
 	std::pair<float, float> WindowsInput::GetMousePosImpl()
 	{
-		auto window = static_cast<GLFWwindow*>(Application::GetInstace().GetWindow().GetNativeWindow());
+		auto window = static_cast<GLFWwindow*>(Application::GetInstance().GetWindow().GetNativeWindow());
 		double xPos, yPos;
 		glfwGetCursorPos(window, &xPos, &yPos);
 		return std::pair<float, float>(xPos, yPos);

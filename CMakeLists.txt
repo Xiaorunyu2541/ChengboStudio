@@ -24,11 +24,6 @@ CPMAddPackage(
     GITHUB_REPOSITORY glfw/glfw
     GIT_TAG 7b6aead9fb88b3623e3b3725ebb42670cbe4c579
 )
-CPMAddPackage(
-    NAME glm
-    GITHUB_REPOSITORY g-truc/glm
-    GIT_TAG 0af55ccecd98d4e5a8d1fad7de25ba429d60e863
-)
 find_package(OpenGL REQUIRED)
 
 # debug/release macros
